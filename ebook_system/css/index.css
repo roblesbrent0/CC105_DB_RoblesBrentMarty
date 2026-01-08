@@ -1,0 +1,242 @@
+*{
+    font-family: 'Poppins', sans-serif
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+
+/* TOP CONTENT */
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 140px 40px 40px 40px;
+}
+
+.main-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.main-txt h2{
+    color: #333;
+    letter-spacing: 0.5px;
+    margin: 0 0 5px 0;
+}
+
+.main-txt p{
+    color: #444;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.main-action{
+    display: flex;
+    align-items: center;
+}
+
+.main-action a{
+    letter-spacing: 0.5px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #89A8B2;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.main a:hover{
+    transform: scale(1.05);
+}
+
+
+.book-view{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #B3C8CF;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+}
+
+.book-infor{
+    display: flex;
+    flex-direction: column;
+}
+
+.book-view p{
+    margin: 0;
+}
+
+.book-view h2{
+    margin: 0 0 10px 0;
+}
+
+.book-view a{
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    text-decoration: none;
+    color: #444;
+    transition: background-color 0.3s ease-in-out;
+}
+
+iframe{
+    flex-grow: 1;
+    border: none;
+    width: 800px;
+    height: 470px;
+    border-radius: 10px;
+}
+
+.book-view a:hover{
+    background-color: #1F509A;
+    color: #fff;
+}
+
+/* SEARCH AREA*/
+form{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    background-color: #B3C8CF;
+    margin: 0;
+    padding: 20px 40px;
+}
+
+#search-term{
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 8px 40px;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    flex-grow: 1;
+    text-align: center;
+}
+
+#search-term:focus {
+    border-color: #1F509A;
+}
+
+#search-term:hover{
+    background-color: #D4EBF8;
+}
+
+#search-btn{
+    letter-spacing: 0.5px;
+    background-color: #D4EBF8;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: #1F509A;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#search-btn:hover{
+    background-color: #1F509A;
+    color: #fff;
+}
+
+.books-result{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    background-color: #89A8B2;
+    gap: 5px;
+}
+
+.book-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.book-item h3{
+    border-bottom: 2px solid #89A8B2;
+    margin: 0 0 8px 0;
+}
+
+.book-item p{
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+.book-item a{
+    text-decoration: none;
+    background-color: #D4EBF8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1F509A;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease-in-out;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.book-item a:hover{
+    background-color: #1F509A;
+    color: #fff;
+}
+
+
+/* FEATURED BOOKS */
+
+.book-list{
+    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.featured-books{
+    background-color: #fff;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-books h3{
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.featured-books a{
+    display: flex;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #333;
+    transition: background-color 0.3s ease-in-out;
+    margin: 0;
+    border-radius: 8px;
+    background-color: #B3C8CF;
+    flex-grow: 1;
+}
+
+.featured-books a:hover{
+    background-color: #1F509A;
+    color: #fff;
+}
